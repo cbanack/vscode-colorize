@@ -111,11 +111,12 @@ class VariableDecoration implements IDecoration {
 
     if (this.variable.color && this.variable.color.rgb) {
       let backgroundDecorationType = window.createTextEditorDecorationType({
-        borderWidth: '1px',
+        //borderWidth: '1px',
+        borderWidth: '0 0 2px 0',
         borderStyle: 'solid',
         borderColor: this.variable.color.toRgbString(),
-        backgroundColor: this.variable.color.toRgbString(),
-        color: generateOptimalTextColor(this.variable.color),
+        // backgroundColor: this.variable.color.toRgbString(),
+        // color: generateOptimalTextColor(this.variable.color),
         rangeBehavior: DecorationRangeBehavior.ClosedClosed
       });
       this._decoration = backgroundDecorationType;

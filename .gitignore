@@ -21,3 +21,6 @@ testem.log
 .env*
 .vscode-test
 
+# cbanack extras
+*.vsix
+BUILD_INSTRUCTIONS

@@ -101,11 +101,12 @@ class ColorDecoration implements IDecoration {
 
   private _generateDecorator() {
     let backgroundDecorationType = window.createTextEditorDecorationType({
-      borderWidth: '1px',
+      //borderWidth: '1px',
+      borderWidth: '0 0 2px 0',
       borderStyle: 'solid',
       borderColor: this.color.toRgbString(),
-      backgroundColor: this.color.toRgbString(),
-      color: generateOptimalTextColor(this.color),
+      //backgroundColor: this.color.toRgbString(),
+      //color: generateOptimalTextColor(this.color),
       rangeBehavior: DecorationRangeBehavior.ClosedClosed
     });
     this._decoration = backgroundDecorationType;
